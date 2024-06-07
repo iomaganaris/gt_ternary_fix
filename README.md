@@ -45,3 +45,10 @@ nabla4_benchmark_unstructured_gtfn_gpu median runtime: 0.0012216320037841798
 $ PYTHONPATH=$(pwd)/build_with_fix:$PYTHONPATH python3.11 run_nabla4.py --klevels 65 --repetitions 20
 nabla4_benchmark_unstructured_gtfn_gpu median runtime: 0.0009779359996318817
 ```
+
+# Playing with `horizontal_shift`
+
+To try different implementations of `horizontal_shift` you can edit the `unstructured.hpp` file located inside the build directory in:
+```
+<build_dir>/_deps/gridtools-src/include/gridtools/fn/unstructured.hpp
+```
