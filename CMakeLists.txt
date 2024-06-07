@@ -54,11 +54,6 @@ execute_process(
 list(APPEND CMAKE_PREFIX_PATH "${NB_DIR}")
 find_package(nanobind CONFIG REQUIRED)
 
-nanobind_add_module(copy_neighbor_gtfn copy_neighbor_gtfn_bindings.cpp)
-target_include_directories(copy_neighbor_gtfn PRIVATE include GridTools)
-target_link_libraries(copy_neighbor_gtfn PUBLIC GridTools::gridtools GridTools::stencil_naive GridTools::storage_gpu)
-set_source_files_properties(copy_neighbor_gtfn_bindings.cpp PROPERTIES LANGUAGE CUDA)
-
 nanobind_add_module(nabla4_gtfn nabla4_gtfn_bindings.cpp)
 target_include_directories(nabla4_gtfn PRIVATE include GridTools)
 target_link_libraries(nabla4_gtfn PUBLIC GridTools::gridtools GridTools::stencil_naive GridTools::storage_gpu)
