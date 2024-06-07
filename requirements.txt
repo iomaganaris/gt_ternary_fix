@@ -1,1 +1,4 @@
 nanobind==1.9.2
+cupy
+numpy
+
