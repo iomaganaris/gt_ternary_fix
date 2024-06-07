@@ -1,4 +1,4 @@
 nanobind==1.9.2
 cupy
 numpy
-
+-e git+https://github.com/GridTools/gt4py.git@main#egg=gt4py
