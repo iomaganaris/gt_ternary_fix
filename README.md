@@ -6,7 +6,7 @@ To build and compare the generated code use:
 python -m venv venv_gtfn
 source venv_gtfn/bin/activate
 pip install -r requirements.txt
-# `gridtools` also need `boost` which can be installed either via `spack` or the system package manager or loaded using modules
+# `gridtools` also needs `boost` which can be installed either via `spack` or the system package manager or loaded using modules
 mkdir build_without_fix
 pushd build_without_fix
 # Below command will build the project using `gridtools` `master`
